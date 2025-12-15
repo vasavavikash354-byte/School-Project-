@@ -1,0 +1,183 @@
+12.15 2:53 PM
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VK EDITI – Animated Editing Studio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(270deg,
+    #ff1744,
+    #ff4081,
+    #ffeb3b,
+    #4caf50,
+    #000000);
+  background-size: 800% 800%;
+  animation: gradientBG 10s ease infinite;
+  color:#fff;
+}
+
+@keyframes gradientBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+header{
+  padding:20px;
+  text-align:center;
+  animation: fadeDown 1.5s;
+}
+
+header h1{
+  font-size:38px;
+  letter-spacing:2px;
+}
+
+header span{
+  color:#000;
+  background:#fff;
+  padding:4px 10px;
+  border-radius:6px;
+}
+
+@keyframes fadeDown{
+  from{opacity:0; transform:translateY(-30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:30px;
+  animation: fadeUp 2s;
+}
+
+.hero p{
+  max-width:600px;
+  text-align:center;
+  margin:15px;
+  font-size:16px;
+}
+
+.hero button{
+  padding:12px 25px;
+  font-size:16px;
+  border:none;
+  border-radius:25px;
+  background:#000;
+  color:#fff;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  background:#fff;
+  color:#000;
+  transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.tools{
+  margin:40px auto;
+  max-width:1000px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:rgba(0,0,0,0.6);
+  border-radius:15px;
+  padding:20px;
+  text-align:center;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+  background:rgba(255,255,255,0.15);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.7);
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>VK <span>EDITI</span></h1>
+  <p>Animated Photo & Video Editing Studio</p>
+</header>
+
+<section class="hero">
+  <p>
+    Welcome to <b>VK EDITI</b> – a professional animated editing platform.
+    Edit photos & videos with powerful filters, effects and AI tools.
+  </p>
+  <button>Start Editing</button>
+</section>
+
+<section class="tools">
+  <div class="card">
+    <h3> Photo Filters</h3>
+    <p>Grayscale, Sepia, Blur, Brightness, Contrast, Vintage</p>
+  </div>
+
+  <div class="card">
+    <h3>✨ AI Enhance</h3>
+    <p>HD Enhance, Face Clear, Old Photo Repair</p>
+  </div>
+
+  <div class="card">
+    <h3> Video Tools</h3>
+    <p>Video Enhance, Color Boost, Frame Smooth</p>
+  </div>
+
+  <div class="card">
+    <h3> Text & Stickers</h3>
+    <p>Add animated text, emojis & stickers</p>
+  </div>
+
+  <div class="card">
+    <h3> Transform</h3>
+    <p>Rotate, Crop, Resize, Flip</p>
+  </div>
+
+  <div class="card">
+    <h3> Share & Download</h3>
+    <p>Download HD & share on social media</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 VK EDITI | Animated Editing Website | School Project
+</footer>
+
+</body>
+</html>
